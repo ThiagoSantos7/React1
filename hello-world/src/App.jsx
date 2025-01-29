@@ -1,16 +1,12 @@
-import { useState } from 'react'
-
+import { Paragrafo } from "./styles";
 
 function App() {
-  
-
   return (
     <>
-      <div>
-      <h1>Hello World React</h1>
-      </div>
+      <h1>Hello world</h1>
+      <Paragrafo>My name is Thiago!</Paragrafo>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
