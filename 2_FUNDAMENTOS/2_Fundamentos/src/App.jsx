@@ -1,14 +1,16 @@
 // Components
+
 import FirstComponents from "./components/FirstComponents";
 
-//styles / css
+//Styles
+
 import "./App.css";
 
 function App() {
   return (
     <>
       <div>
-        <h1>Fundamentos React</h1>
+        <h1>Aula componentes</h1>
         <FirstComponents />
       </div>
     </>
