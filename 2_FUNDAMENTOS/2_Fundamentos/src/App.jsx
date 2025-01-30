@@ -1,6 +1,7 @@
 // Components
 
 import FirstComponents from "./components/FirstComponents";
+import TemplateExprecions from "./components/TemplateExpressions";
 
 //Styles
 
@@ -12,6 +13,7 @@ function App() {
       <div>
         <h1>Aula componentes</h1>
         <FirstComponents />
+        <TemplateExprecions />
       </div>
     </>
   );
