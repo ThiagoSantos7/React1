@@ -5,24 +5,17 @@ const MenageData = () => {
 
   console.log(someData);
 
-  const [number, setNumber] = useState(10);
+  const [number, setNumber] = useState(15);
 
   return (
     <>
       <div>
         <p>Valor: {someData}</p>
-        <button
-          onClick={() => {
-            someData = 15;
-          }}
-        >
-          Mudar variável
-        </button>
+        <button onClick={() => (someData = 15)}>Mudar variavel</button>
       </div>
-
       <div>
         <p>Valor: {number}</p>
-        <button onClick={() => setNumber(30)}>Mudar valor</button>
+        <button onClick={() => setNumber(100)}>Mudar valor</button>
       </div>
     </>
   );

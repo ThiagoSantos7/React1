@@ -2,6 +2,7 @@
 import "./App.css";
 
 import City from "./assets/city.jpg";
+import ListRender from "./components/listRender";
 import MenageData from "./components/MenageData";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <img src={City} alt="Cidade" />
       </div>
       <MenageData />
+      <ListRender />
     </div>
   );
 }
