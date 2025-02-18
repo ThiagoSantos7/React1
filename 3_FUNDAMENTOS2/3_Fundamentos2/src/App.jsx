@@ -13,7 +13,7 @@ import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
 import Message from "./components/Message";
 import ChangeMessageState from "./components/ChangeMessageState";
-import { use } from "react";
+import UserDetails from "./components/UserDetails";
 
 function App() {
   const [userName] = useState("Barbara");
@@ -33,6 +33,12 @@ function App() {
   function handleMessage(msg) {
     setMessage(msg);
   }
+
+  const users = [
+    { id: 1, name: "Thiago", age: 19, job: "Front End" },
+    { id: 2, name: "Pablo", age: 21, job: "Back End" },
+    { id: 3, name: "Kaio", age: 16, job: "Estudante" },
+  ];
 
   return (
     <div className="App">
@@ -79,6 +85,15 @@ function App() {
       {/* State lift */}
       <Message msg={message} />
       <ChangeMessageState handleMessage={handleMessage} />
+      {/* Desafio */}
+      {users.map((user) => (
+        <UserDetails
+          key={user.id}
+          name={user.name}
+          age={user.age}
+          job={user.job}
+        />
+      ))}
     </div>
   );
 }
