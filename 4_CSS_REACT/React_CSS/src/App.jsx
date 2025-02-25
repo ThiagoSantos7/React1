@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import MyComponent from "./components/MyComponent";
+import Title from "./components/Title";
 
 function App() {
   const n = 15;
   const [name] = useState("Thiago");
+  const redTitle = true;
   return (
     <>
       {/* CSS Golbal */}
@@ -36,6 +38,12 @@ function App() {
       >
         Teste Nome
       </h2>
+      {/* Classe dinamica */}
+      <h1 className={redTitle ? "red-title" : "title"}>
+        Este titulo contem classe dinamica
+      </h1>
+      {/* CSS modules */}
+      <Title />
     </>
   );
 }
